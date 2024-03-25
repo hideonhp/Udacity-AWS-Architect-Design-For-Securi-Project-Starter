@@ -1,0 +1,9 @@
+# Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+Implement SSH key-based authentication: Disable password authentication and configure SSH to only allow login using SSH keys.
+Configure SSH access controls: Utilize firewall rules or security groups to restrict SSH access to only trusted IP addresses or ranges.
+Implement rate limiting: Set up tools or services that can detect and block multiple failed login attempts within a short time frame.
+
+# Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+Least privilege access control: Ensure that the IAM roles assigned to the EC2 instances follow the principle of least privilege. Limit the permissions granted to the instance role profile to only allow access to specific S3 buckets, rather than using wildcard (*) permissions.
+Server-side encryption: Enable server-side encryption (SSE) on the S3 bucket containing the secret recipes.
+Access restrictions based on instance requirements: Restrict the instance profile role associated with the EC2 instances to only read from the S3 bucket containing the secret recipes.

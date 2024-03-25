@@ -1,0 +1,20 @@
+# Identify tools that will allow you to do the following:
+Tool: Checkov
+
+## Scan infrastructure as code templates
+Checkov: https://www.checkov.io
+
+### Example vulnerability
+Exposing S3 buckets publicly without proper access controls in CloudFormation templates.
+
+##Scan AMI’s or containers for OS vulnerabilities
+Tool: Amazon Inspector, Clair, Trivy
+
+### Example vulnerability
+Unpatched operating system vulnerabilities such as CVE-2021-XXXX.
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+Tool: AWS Config, CloudCheckr, Scout Suite
+
+### Example vulnerability
+Security group allowing unrestricted inbound traffic from 0.0.0.0/0 to port 22, exposing SSH to the public internet.

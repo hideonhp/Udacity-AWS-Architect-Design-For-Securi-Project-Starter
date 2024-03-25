@@ -1,0 +1,7 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+GuardDuty alerts related to brute force attacks usually signal unauthorized efforts to access AWS resources.
+They provide specific information such as the impacted instance, the direction of the attack, and the associated IP address.
+
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+IAM policies must align with the principle of least privilege, granting roles only the permissions necessary for their designated tasks.
+It's crucial to conduct a comprehensive review of IAM policies, removing any unnecessary privileges and refining permissions to the essential scope required.
